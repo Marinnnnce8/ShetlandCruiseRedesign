@@ -1,0 +1,19 @@
+@media print {
+	.header,
+	.footer,
+	.nb-form,
+	.TextformatterVideoEmbed,
+	.uk-button,
+	.uk-breadcrumb,
+	.floating-tool,
+	#site-header,
+	.section-signup,
+	#site-footer,
+	.page-meta {
+		display: none !important;
+	}
+
+	.page-header {
+		padding-top: 0;
+	}
+}

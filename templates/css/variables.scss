@@ -1,0 +1,18 @@
+$nb-margin: 2.5rem;
+$nb-margin-small: 1.5rem;
+
+$breakpoint-small: 640px;
+//$breakpoint-medium: 960px;
+//$breakpoint-large: 1200px;
+//$breakpoint-xlarge: 1600px;
+$breakpoint-xsmall-max: ($breakpoint-small - 1);
+//$breakpoint-small-max: ($breakpoint-medium - 1);
+//$breakpoint-medium-max: ($breakpoint-large - 1);
+//$breakpoint-large-max: ($breakpoint-xlarge - 1);
+$breakpoint-mobile: 479px;
+
+$nb-red: #e11e2f;
+
+$nb-speed: 256ms;
+$nb-speed-long: 512ms;
+$nb-speed-short: 128ms;
