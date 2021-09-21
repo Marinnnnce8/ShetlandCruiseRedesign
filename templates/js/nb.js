@@ -220,6 +220,7 @@ $.extend($nb.json.render, {
 									target: target,
 									class: [
 										"uk-button",
+										"uk-button-small",
 										"uk-button-default",
 										"button-ghost",
 										"push-icon-right" + (isActivity ? "" : " uk-button-small"),

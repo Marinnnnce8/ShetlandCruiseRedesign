@@ -9,7 +9,7 @@
 
 include("./inc/head.php");
 
-$textShortlist = __("Shortlist");
+$textShortlist = __("Shortlisted");
 $textViewShortlist = sprintf(__("View your %s"), $textShortlist);
 $textOn = __("On");
 $textOff = __("Off");
@@ -44,7 +44,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 							"uk-button",
 							"uk-button-primary",
 							"button-ghost",
-							"uk-button-small",
 							"push-icon-right",
 							"uk-hidden",
 						],
@@ -68,7 +67,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 			<?= ukBreadcrumb() ?>
 			<div class='hero-content'>
 				<?= $before ?>
-				<h1 class='uk-heading-hero<?= ($page->wrapContent ? " blue" : "") ?>' id='title<?= $page->id ?>'><?= $page->h1 ?></h1>
+				<h1 class='uk-heading-hero' id='title<?= $page->id ?>'><?= $page->h1 ?></h1>
 				<?= $after ?>
 				<?= getIntro($page, "uk-width-" . ($page->wrapContent ? "2-3" : "1-1") . "@l hero-summary") ?>
 			</div>
@@ -200,7 +199,7 @@ echo $nb->imgBg($imgSignup, [
 						"offsetTop" => -180,
 						"cls" => "uk-animation-slide-bottom-small",
 					]) ?>'>
-						<h3><span class='uk-text-muted'>Visit</span> SHETLAND<small>.org</small></h3>
+						<h3>Visit Shetland.org</h3>
 						<p class='font-family-alt'>Savour the wildlife, the birdlife and the warm community spirit.</p>
 					</a>
 

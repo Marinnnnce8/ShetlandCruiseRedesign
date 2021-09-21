@@ -11,7 +11,7 @@ $pageActivities = $pages->get(1051);
 $pageItineraries = $pages->get(1054);
 $pageInfo = $pages->get(1056);
 $pageFaqs = $pages->get(1041);
-$moreText = __("FIND OUT MORE");
+$moreText = __("Find out more");
 
 $optionsJson = [
 	"action" => "items",
@@ -89,7 +89,7 @@ $optionsJson = [
 
 		<?= $nb->imgBg($pageActivities->banner->getRandom(), ["class" => "section-header uk-light has-image-background"]) ?>
 			<div class='uk-container'>
-				<h2 class='section-title'>Shetland <span><?= $pageActivities->title ?></span></h2>
+				<h2 class='section-title'>Shetland <?= $pageActivities->title ?></h2>
 				<div class='section-summary'><?= $pageActivities->getSummary() ?></div>
 			</div>
 		</div>
@@ -112,7 +112,7 @@ $optionsJson = [
 				"more" => $textMore,
 			])) ?>
 			<div class='uk-margin-medium-top uk-text-center'>
-				<?= renderButtonLink($pages->get(1051)->url, __("VIEW ALL ATTRACTIONS"), true) ?>
+				<?= renderButtonLink($pages->get(1051)->url, __("View all attractions"), true) ?>
 			</div>
 		</div>
 	</div>
@@ -121,7 +121,7 @@ $optionsJson = [
 	<div class='uk-section uk-section-large'>
 		<div class='uk-container'>
 			<div class='section-header uk-text-center'>
-				<h2 class='section-title'><a href='<?= $urlFinder ?>'>Find Your <span>Shetland Activity</span></a></h2>
+				<h2 class='section-title'><a href='<?= $urlFinder ?>'>Find Your Shetland Activity</a></h2>
 				<div class='section-summary'>Go to the Activity Finder page to search for Shetland activities. Make your visit memorable.</div>
 			</div>
 
@@ -129,7 +129,7 @@ $optionsJson = [
 
 			<div class='uk-margin-top uk-text-center'>
 
-				<?= renderButtonLink($urlFinder, __("GO TO ACTIVITY FINDER"), true) ?>
+				<?= renderButtonLink($urlFinder, __("Go to activity finder"), true) ?>
 			</div>
 		</div>
 	</div>
@@ -139,7 +139,7 @@ $optionsJson = [
 
 		<?= $nb->imgBg($pageItineraries->banner->getRandom(), ["class" => "section-header uk-light has-image-background"]) ?>
 			<div class='uk-container'>
-				<h2 class='section-title'>Shetland <span><?= $pageItineraries->title ?></span></h2>
+				<h2 class='section-title'>Shetland <?= $pageItineraries->title ?></h2>
 				<div class='section-summary'><?= $pageItineraries->getSummary() ?></div>
 			</div>
 		</div>
@@ -148,7 +148,7 @@ $optionsJson = [
 			<?= $nb->renderJson($pageItineraries->children->getRandom(3), $optionsJson) ?>
 
 			<div class='uk-margin-medium-top uk-text-center'>
-				<?= renderButtonLink($pageItineraries->url, __("VIEW ALL ITINERARIES"), true) ?>
+				<?= renderButtonLink($pageItineraries->url, __("View all itineraries"), true) ?>
 			</div>
 		</div>
 	</div>
@@ -158,7 +158,7 @@ $optionsJson = [
 		<div class='uk-container'>
 			<div class='uk-child-width-1-2@l' data-uk-grid>
 				<div>
-					<h2 class='section-title small'>Information <span>For Crew Members</span></h2>
+					<h2 class='section-title small'>Information <br>For Crew Members</h2>
 					<?= $pageInfo->blocks->get("repeater_matrix_type=5")->render() ?>
 					<div class='uk-margin-top'>
 						<?= renderButtonLink($pageInfo->url, __("View a full list")) ?>
@@ -166,7 +166,7 @@ $optionsJson = [
 				</div>
 
 				<div>
-					<h2 class='section-title small'>Frequently <span>Asked Questions</span></h2>
+					<h2 class='section-title small'>Frequently <br>Asked Questions</h2>
 					<?= $pageFaqs->blocks->get("repeater_matrix_type=5")->render() ?>
 					<div class='uk-margin-top'>
 						<?= renderButtonLink($pageFaqs->url, __("View all questions")) ?>
@@ -232,7 +232,7 @@ $optionsJson = [
 					?><div>
 						<div class='about-etc about-link uk-background-primary uk-light'>
 							<div class='uk-overlay'>
-								<p>... and much more about life in Shetland on the shetland.org website.</p>
+								<p>... and much more about life in Shetland on the <a href="<?= $urlShetland ?>">shetland.org</a> website.</p>
 								<img class='shetland-pride-logo uk-position-bottom-right' src='<?= $urls->templates ?>img/shetland-pride-white.png' alt=''>
 							</div>
 						</div>
@@ -241,7 +241,7 @@ $optionsJson = [
 					<div>
 						<div class='about-link'>
 							<div class='uk-flex uk-height-1-1 uk-flex-bottom uk-flex-right uk-light'>
-								<a href='<?= $urlShetland ?>' class='visit-shetland'><span class='uk-text-muted'>Visit</span> Shetland<small>.org</small></a>
+								<a href='<?= $urlShetland ?>' class='visit-shetland'>Visit Shetland.org</a>
 							</div>
 						</div>
 					</div>
@@ -255,7 +255,7 @@ $optionsJson = [
 		<div class='uk-container'>
 			<div class='uk-flex-between uk-flex uk-flex-wrap'>
 				<div>
-					<h2 class='section-title small'>Connect <span>With Shetland.org on:</span></h2>
+					<h2 class='section-title small'>Connect With<span> Shetland.org</span> on:</h2>
 				</div>
 				<div><?php
 
