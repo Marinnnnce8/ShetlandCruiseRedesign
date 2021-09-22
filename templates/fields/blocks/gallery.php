@@ -19,7 +19,7 @@ if($c) {
 	if($page->headline && $c == 1) $options["desc"] = $page->headline;
 
 	// Add a title if specified
-	if($page->title) $out .= $nb->wrap(renderHeading($page->title, 3, ["uk-margin-remove-top"]), $wrapContent);
+	if($page->title) $out .= $nb->wrap(renderHeading($page->title, 3), $wrapContent);
 
 	// Render the gallery
 	$out .= nbGallery($page->gallery, $options);

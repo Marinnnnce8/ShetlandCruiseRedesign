@@ -410,10 +410,9 @@ var theme = {
 			var on = theme.cookie.in(id, this.config.name),
 				cls = [
 					"uk-button",
-					"uk-button-small",
 					"uk-button-default",
 					"button-ghost",
-					"push-icon-left",
+					"push-icon-right",
 				];
 
 			if(on) cls.push("uk-active");

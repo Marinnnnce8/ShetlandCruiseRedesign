@@ -9,7 +9,7 @@
 
 include("./inc/head.php");
 
-$textShortlist = __("Shortlisted");
+$textShortlist = __("Shortlist");
 $textViewShortlist = sprintf(__("View your %s"), $textShortlist);
 $textOn = __("On");
 $textOff = __("Off");
@@ -54,7 +54,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
 			<div class='uk-position-top-right'>
 				<div class='navbar-right-box uk-flex uk-flex-middle'>
-					<a href='<?= $urlShetland ?>'><img src='<?= $urls->templates ?>img/shetland-pride-logo.jpg' alt='Shetland Pride Logo'></a>
+					<a href='<?= $urlShetland ?>'><img src='<?= $urls->templates ?>img/shetland-pride-logo-2.jpg' alt='Shetland Pride Logo'></a>
 				</div>
 			</div>
 		</div>
@@ -281,7 +281,7 @@ echo $nb->imgBg($imgSignup, [
 			]) ?>' data-shortlist-config='<?= json_encode([
 				"name" => $modules->get("CruiseEnquiry")::name,
 				"off" => $textShortlist,
-				"offAdd" => __("Add to my Shortlist"),
+				"offAdd" => __("Shortlisted"),
 				"on" => __("Shortlisted"),
 				"icon" => "<i class=icon-clipboards-4></i>",
 				"url" => $urlShortlist,

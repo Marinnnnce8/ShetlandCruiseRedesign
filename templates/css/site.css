@@ -622,9 +622,9 @@ template {
 	--uk-breakpoint-l: 1200px;
 	--uk-breakpoint-xl: 1600px;
 }*/
-em {
+/* em {
 	font-style: normal;
-}
+} */
 
 /* ========================================================================
 	 Component: Link
@@ -1939,7 +1939,7 @@ select.uk-form-width-xsmall {
 	/* 6 */
 	display: inline-block;
 	box-sizing: border-box;
-	padding: 0 35px;
+	padding: 0 20px;
 	vertical-align: middle;
 	font-size: 16px;
 	/* 7 */
@@ -2022,7 +2022,7 @@ select.uk-form-width-xsmall {
 }
 
 .uk-button.push-icon-right {
-	padding-right: calc(60px);
+	padding-right: calc(40px);
 }
 
 .uk-button.push-icon-right i,
@@ -2034,7 +2034,7 @@ select.uk-form-width-xsmall {
 	-ms-transform: translate(0, -50%);
 	-o-transform: translate(0, -50%);
 	transform: translate(0, -50%);
-	margin-right: 28px;
+	margin-right: 15px;
 }
 
 .uk-button.push-icon-right .uk-spinner {
@@ -8462,6 +8462,10 @@ td.uk-text-break {
 	margin-top: 0 !important;
 }
 
+.content>*:first-child>*:first-child {
+    margin-top: 0!important;
+}
+
 .content a {
 	text-decoration: underline;
 }
@@ -8476,11 +8480,11 @@ td.uk-text-break {
 }
 
 .content figure figcaption {
-	font-size: 12px;
+	font-size: 14px;
 	line-height: 24px;
 	letter-spacing: 0.025rem;
-	color: #7e7e7e;
-	font-style: italic;
+	color: #1b365d;
+	/* font-style: italic; */
 	margin-top: 3px;
 	font-weight: 500;
 }
@@ -8533,13 +8537,23 @@ td.uk-text-break {
 	padding-left: 25px;
 }
 
+.nb-block.nb-content figcaption {
+	font-size: 14px;
+	text-align: left;
+}
+
+.nb-block.nb-content .align_left,
+.nb-block.nb-content .align_right {
+	margin-bottom: 0.5rem;
+}
+
 /*.nb-content ul:not(.uk-accordion) li a:hover,
 .nb-content ul:not(.uk-accordion) li a:focus {
 	color: #267cb9;
 }*/
 .content li {
 	font-weight: 500;
-	margin-top: 9px;
+	margin-top: 15px;
 	font-family: "Literata";
 }
 
@@ -13624,10 +13638,8 @@ html:not([dir="rtl"]) .noUi-horizontal .noUi-handle {
 	}
 }
 
-.uk-button.button-ghost.uk-button-small.push-icon-left {
-	padding-left: calc(45px);
-}
-
-.uk-button .icon-clipboards-4 {
-	font-size: 18px;
+.nb-gallery .uk-container h3 {
+	font-size: 34px;
+	margin-top: 35px;
+	margin-bottom: 25px;
 }
