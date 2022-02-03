@@ -281,7 +281,7 @@ echo $nb->imgBg($imgSignup, [
 			]) ?>' data-shortlist-config='<?= json_encode([
 				"name" => $modules->get("CruiseEnquiry")::name,
 				"off" => $textShortlist,
-				"offAdd" => __("Add to my Shortlist"),
+				"offAdd" => __("Add to My Shortlist"),
 				"on" => __("Shortlisted"),
 				"icon" => "<i class=icon-clipboards-4></i>",
 				"url" => $urlShortlist,
